@@ -6,6 +6,17 @@ import { motion, useInView } from 'framer-motion'
 
 const projectsData = [
   {
+    id: 0,
+    title: 'Solyd App',
+    description:
+      'No aplicativo Solyd, você poderá começar com os conceitos básicos de segurança cibernética e desenvolver suas habilidades em qualquer lugar com os tutoriais deste aplicativo.',
+    image: '/images/projects/0.png',
+    tag: ['All', 'Mobile'],
+    gitUrl: '/',
+    previewUrl:
+      'https://play.google.com/store/apps/details?id=com.mindz.solyd&hl=pt_BR',
+  },
+  {
     id: 1,
     title: 'Cartão de Todos App',
     description:
