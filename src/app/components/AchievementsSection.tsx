@@ -49,9 +49,8 @@ const AchievementsSection = () => {
                 {achievement.prefix}
                 <AnimatedNumbers
                   includeComma
-                  animateToNumber={parseInt(achievement.value)}
                   locale='en-US'
-                  className='text-white text-4xl font-bold'
+                  animateToNumber={parseInt(achievement.value)}
                   configs={(_, index) => {
                     return {
                       mass: 1,
