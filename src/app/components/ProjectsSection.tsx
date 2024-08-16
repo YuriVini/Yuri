@@ -118,11 +118,11 @@ const projectsData = [
 ]
 
 const ProjectsSection = () => {
-  const [tag, setTag] = useState('All')
+  const [tag, setTag] = useState<PROJECT_TAG>(PROJECT_TAG.ALL)
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true })
 
-  const handleTagChange = (newTag) => {
+  const handleTagChange = (newTag: PROJECT_TAG) => {
     setTag(newTag)
   }
 
@@ -142,24 +142,24 @@ const ProjectsSection = () => {
       </h2>
       <div className='text-white flex flex-wrap justify-center items-center gap-2 py-6'>
         <ProjectTag
+          name={PROJECT_TAG.ALL}
           onClick={handleTagChange}
-          name='All'
-          isSelected={tag === 'All'}
+          isSelected={tag === PROJECT_TAG.ALL}
         />
         <ProjectTag
+          name={PROJECT_TAG.WEB}
           onClick={handleTagChange}
-          name='Web'
-          isSelected={tag === 'Web'}
+          isSelected={tag === PROJECT_TAG.WEB}
         />
         <ProjectTag
+          name={PROJECT_TAG.MOBILE}
           onClick={handleTagChange}
-          name='Mobile'
-          isSelected={tag === 'Mobile'}
+          isSelected={tag === PROJECT_TAG.MOBILE}
         />
         <ProjectTag
+          name={PROJECT_TAG.BACK}
           onClick={handleTagChange}
-          name='Backend'
-          isSelected={tag === 'Backend'}
+          isSelected={tag === PROJECT_TAG.BACK}
         />
       </div>
       <ul ref={ref} className='grid md:grid-cols-3 gap-8 md:gap-12'>
