@@ -4,6 +4,13 @@ import ProjectCard from './ProjectCard'
 import ProjectTag from './ProjectTag'
 import { motion, useInView } from 'framer-motion'
 
+enum PROJECT_TAG {
+  ALL = 'All',
+  MOBILE = 'Mobile',
+  WEB = 'Web',
+  BACK = 'Backend',
+}
+
 const projectsData = [
   {
     id: 0,
