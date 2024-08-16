@@ -49,10 +49,10 @@ const TAB_DATA = [
 ]
 
 const AboutSection = () => {
-  const [tab, setTab] = useState('skills')
+  const [tab, setTab] = useState<TAB_KEYS>(TAB_KEYS.SKILLS)
   const [_isPending, startTransition] = useTransition()
 
-  const handleTabChange = (id) => {
+  const handleTabChange = (id: TAB_KEYS) => {
     startTransition(() => {
       setTab(id)
     })
@@ -62,9 +62,9 @@ const AboutSection = () => {
     <section className='text-white' id='about'>
       <div className='md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16'>
         <Image
-          src='/images/about-image.jpeg'
           width={500}
           height={500}
+          src='/images/about-image.jpeg'
           alt='desk with computer and coffe'
         />
         <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
@@ -79,22 +79,22 @@ const AboutSection = () => {
           </p>
           <div className='flex flex-row justify-start mt-8'>
             <TabButton
-              selectTab={() => handleTabChange('skills')}
-              active={tab === 'skills'}
+              active={tab === TAB_KEYS.SKILLS}
+              selectTab={() => handleTabChange(TAB_KEYS.SKILLS)}
             >
               {' '}
               Skills{' '}
             </TabButton>
             <TabButton
-              selectTab={() => handleTabChange('education')}
-              active={tab === 'education'}
+              active={tab === TAB_KEYS.EDUCATION}
+              selectTab={() => handleTabChange(TAB_KEYS.EDUCATION)}
             >
               {' '}
               Education{' '}
             </TabButton>
             <TabButton
-              selectTab={() => handleTabChange('languages')}
-              active={tab === 'languages'}
+              active={tab === TAB_KEYS.LANGUAGES}
+              selectTab={() => handleTabChange(TAB_KEYS.LANGUAGES)}
             >
               {' '}
               Languages{' '}
