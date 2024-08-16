@@ -3,6 +3,12 @@ import React, { useTransition, useState } from 'react'
 import Image from 'next/image'
 import TabButton from './TabButton'
 
+enum TAB_KEYS {
+  SKILLS = "skills",
+  EDUCATION = "education",
+  LANGUAGES = "languages",
+} 
+  
 const TAB_DATA = [
   {
     title: 'Skills',
