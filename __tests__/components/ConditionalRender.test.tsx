@@ -12,4 +12,11 @@ describe('ConditionalRender', () => {
       expect(renderChildren).toBeTruthy()
     })
 
+    it('should not render Texts', () => {
+      render(<ConditionalRender condition={false}><p>Hey</p></ConditionalRender>)
+   
+      const renderChildren = screen.queryByText('Hey')
+   
+      expect(renderChildren).not.toBeInTheDocument()
+    })
   })
