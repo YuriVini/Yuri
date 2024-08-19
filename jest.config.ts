@@ -9,9 +9,7 @@ const config: Config = {
   clearMocks: true,
   collectCoverage: true,
   coverageDirectory: "coverage",
-  "collectCoverageFrom": [
-    "**/src/*.{ts,tsx,js,jsx}",
-  ],
+
   testEnvironment: "jsdom",
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/',
