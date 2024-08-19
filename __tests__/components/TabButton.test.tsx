@@ -16,4 +16,13 @@ describe('TabButton', () => {
       expect(selectTabMock).toHaveBeenCalled()
     })
 
+    it('render Texts but no actived', () => {
+      render(<TabButton active={false} selectTab={selectTabMock}>TabButton</TabButton>)
+        
+      const buttonTitle = screen.getByText('TabButton')
+
+      fireEvent.click(buttonTitle)
+        
+      expect(selectTabMock).toHaveBeenCalled()
+    })
   })
