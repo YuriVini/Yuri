@@ -16,4 +16,13 @@ describe('ProjectTag', () => {
       expect(onClickMock).toHaveBeenCalled()
     })
 
+    it('render Texts but no selected', () => {
+      render(<ProjectTag isSelected={false} name='Test' onClick={onClickMock}/>)
+        
+      const buttonTitle = screen.getByText('Test')
+
+      fireEvent.click(buttonTitle)
+        
+      expect(onClickMock).toHaveBeenCalled()
+    })
   })
