@@ -16,7 +16,7 @@ const projectsData = [
     id: 0,
     title: 'Solyd App',
     description:
-      'No aplicativo Solyd, você poderá começar com os conceitos básicos de segurança cibernética e desenvolver suas habilidades em qualquer lugar com os tutoriais deste aplicativo.',
+      'In the Solyd app, you can start with the basics of cybersecurity and develop your skills anywhere in anytime with the tutorials provided in this app.',
     image: '/images/projects/0.png',
     tag: ['All', 'Mobile'],
     gitUrl: '/',
