@@ -14,6 +14,16 @@ enum PROJECT_TAG {
 const projectsData = [
   {
     id: 0,
+    title: 'PMI App',
+    description:
+      'Keep up your PMI certification. Get ahead in your career. The PMI Official mobile app’s first release helps PMI-certificated project professionals maintain certification.',
+    image: '/images/projects/pmi.png',
+    tag: ['All', 'Mobile'],
+    gitUrl: '/',
+    previewUrl: 'https://apps.apple.com/us/app/pmi-official/id6744980359',
+  },
+  {
+    id: 1,
     title: 'Solyd App',
     description:
       'In the Solyd app, you can start with the basics of cybersecurity and develop your skills anywhere in anytime with the tutorials provided in this app.',
@@ -24,7 +34,7 @@ const projectsData = [
       'https://play.google.com/store/apps/details?id=com.mindz.solyd&hl=pt_BR',
   },
   {
-    id: 1,
+    id: 2,
     title: 'Cartão de Todos App',
     description:
       'The Cartão de Todos card is the biggest discount card in Brazil. With it, you have access to health, education, leisure and even earn cashback and lots of discounts on your purchases!',
@@ -35,7 +45,7 @@ const projectsData = [
       'https://play.google.com/store/apps/details?id=com.cartaodetodoswalletapp&hl=pt_BR&gl=US&pli=1',
   },
   {
-    id: 2,
+    id: 3,
     title: 'SemParar App',
     description:
       'SuperApp has more than 20 services for your daily life with solutions for you, your car, Insurance, Shop and much more!',
@@ -46,7 +56,7 @@ const projectsData = [
       'https://play.google.com/store/apps/details?id=com.semparar.semparar.minhaconta2018&hl=pt_BR&gl=US',
   },
   {
-    id: 3,
+    id: 4,
     title: 'Assai App',
     description:
       'The app brings exclusive discounts, content, offer newspapers and a digital wallet, in addition to being a customer relationship channel and placing orders with Assaí Atacadista.',
@@ -57,7 +67,7 @@ const projectsData = [
       'https://play.google.com/store/apps/details?id=com.assai.app&hl=pt_BR&gl=US',
   },
   {
-    id: 4,
+    id: 5,
     title: 'GamePlay App',
     description:
       'Application to help you connect and organize fun and play with friends. Create groups to play your favorite games with your friends with this App that has Discord authentication.',
@@ -67,7 +77,7 @@ const projectsData = [
     previewUrl: '/',
   },
   {
-    id: 5,
+    id: 6,
     title: 'GoFinance App',
     description:
       'Application to control your finances, seeing graphics with OAuth (Google and Apple Authentication)',
@@ -77,7 +87,7 @@ const projectsData = [
     previewUrl: '/',
   },
   {
-    id: 6,
+    id: 7,
     title: 'Stream.Data App',
     description: 'App to see data from Twitch api based in your Twitch User.',
     image: '/images/projects/6.png',
@@ -86,7 +96,7 @@ const projectsData = [
     previewUrl: '/',
   },
   {
-    id: 7,
+    id: 8,
     title: 'Be The Hero',
     description:
       '"Be the Hero" its a project that you may put a problem that needs to be solved. You just need to register your company and the problem. And someone will take the task and solve it.',
@@ -96,7 +106,7 @@ const projectsData = [
     previewUrl: '/',
   },
   {
-    id: 8,
+    id: 9,
     title: 'Proffy',
     description:
       'Proffy is a Web and Mobile application designed to help connect students and teachers. Therefore, this application offers teachers the possibility of registering classes, being able to add information such as the subject, cost and schedule and students the possibility of searching for registered classes',
@@ -106,7 +116,7 @@ const projectsData = [
     previewUrl: '/',
   },
   {
-    id: 9,
+    id: 10,
     title: 'AMA - Ask Me Anything',
     description:
       'AMA is a Web and Mobile application designed to help people in their questions. Therefore, this application offers users the possibility of registering a room, being able to add questions, reactions and mark as answered.',
