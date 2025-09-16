@@ -4,11 +4,11 @@ import Image from 'next/image'
 import TabButton from './TabButton'
 
 enum TAB_KEYS {
-  SKILLS = "skills",
-  EDUCATION = "education",
-  LANGUAGES = "languages",
-} 
-  
+  SKILLS = 'skills',
+  EDUCATION = 'education',
+  LANGUAGES = 'languages',
+}
+
 const TAB_DATA = [
   {
     title: 'Skills',
@@ -22,7 +22,7 @@ const TAB_DATA = [
         <li>Expo</li>
         <li>Redux</li>
         <li>Python</li>
-        <li>Django</li>
+        <li>Golang</li>
       </ul>
     ),
   },
@@ -71,10 +71,11 @@ const AboutSection = () => {
           <h2 className='text-4xl font-bold text-white mb-4'>About Me</h2>
           <p className='text-base lg:text-lg'>
             I am a Mobile Developer with a passion for creating interactive and
-            responsive mobile applications. Throughout my experiences, I developed 
-            a lot of technical skills such as React Native, Typescript, JavaScript, React, Redux, 
-            SQLite, Expo, Python, Django, HTML, CSS, and Git. Some of soft skill are quick learner, 
-            always looking to expand my skill set and team player excited to work with 
+            responsive mobile applications. Throughout my experiences, I
+            developed a lot of technical skills such as React Native,
+            Typescript, JavaScript, React, Redux, SQLite, Expo, Python, Django,
+            HTML, CSS, and Git. Some of soft skill are quick learner, always
+            looking to expand my skill set and team player excited to work with
             others to create amazing applications.
           </p>
           <div className='flex flex-row justify-start mt-8'>
