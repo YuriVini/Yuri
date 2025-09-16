@@ -31,7 +31,7 @@ const achievementsList = [
   {
     id: 3,
     metric: 'Years',
-    value: '5',
+    value: '6',
   },
 ]
 
